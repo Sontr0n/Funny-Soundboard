@@ -1,11 +1,11 @@
 import javax.swing.*;
 import java.awt.*;
-package soundboard;
+
 
 public class appGUI {
 	 JFrame mainFrame;
 	 JPanel mainPanel;
-	 JMenubar menubar;
+	 JMenuBar menubar;
 	 JMenu file;
 	 JMenu edit;
 	 JTable table;
@@ -13,7 +13,7 @@ public class appGUI {
 	public appGUI() {
  		  mainFrame = new JFrame("Soundboard Main Window");
 		  mainPanel = new JPanel();
-		  menubar = new JMenubar();
+		  menubar = new JMenuBar();
 		  file = new JMenu("File");
 		  edit = new JMenu("Edit");
 		  table = new JTable(4, 0);

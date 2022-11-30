@@ -1,6 +1,5 @@
 import javax.swing.*;
 import java.awt.*;
-package soundboard;
 
 public class Soundboard {
 	public static void main(String[] args) {
