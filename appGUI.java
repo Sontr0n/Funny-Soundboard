@@ -11,7 +11,7 @@ public class appGUI {
 	 JTable table;
 
 	public appGUI() {
- 		  mainFrame = new JFrame("Soundboard Main Window");
+ 		  mainFrame = new JFrame("Soundboard");
 		  mainPanel = new JPanel();
 		  menubar = new JMenuBar();
 		  file = new JMenu("File");
@@ -22,15 +22,23 @@ public class appGUI {
 
 
 	public  void init() {
-		menubar.add(file);
+		file.setSize(186, 126);
+		edit.setSize(186, 126);
+	        menubar.add(file);
 		menubar.add(edit);
-		mainPanel.add(menubar);
+		
+		mainFrame.setJMenuBar(menubar);
+		
+		
+		
 		mainPanel.add(table);
 		mainFrame.add(mainPanel);
+		
+		mainFrame.setLocation(960, 480);
+		mainFrame.setSize(2000, 1200);
 		mainFrame.setVisible(true);
 	
 	}
 
 
 }
-
